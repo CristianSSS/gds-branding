@@ -1,0 +1,30 @@
+.arrowTransition{
+    position: absolute;
+    bottom: 6.125rem;
+    right: 30%;
+    z-index: 10000;
+    background-color: var(--gds-color-red);
+    border-radius: 3.125rem;
+    transition: 2s;
+}
+
+.arrowTransition img{
+    transition: 2s;
+    transform: rotate(0);
+    position: relative;
+}
+
+
+
+.arrowToRight{
+    right: 5%;
+}
+
+.arrowToLeft{
+    right: 90%;
+}
+
+.arrowStart{
+    transition: 1s;
+    opacity: 0;
+}

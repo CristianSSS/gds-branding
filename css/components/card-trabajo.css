@@ -1,0 +1,60 @@
+.card-trabajo{
+    display: flex;
+    width: 55vw;
+    height: 60vh;
+    margin: 0 6.25rem;
+  
+}
+
+.card-trabajo__title{
+
+    width: auto;
+
+}
+
+.card-trabajo__flecha{
+
+    width: 3rem;
+
+}
+
+.card-trabajo__img{
+   flex-basis: 100%;
+    object-fit: cover;
+    background-color: blueviolet;
+    transition: .7s;
+}
+.card-trabajo__img:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+ }
+
+.seccion-trabajos{
+    height: 100vh;
+    width: auto;
+}
+
+.container-cards-trabajos{
+    height: 100vh;
+    width: auto;
+}
+
+@media (width < 992px){
+    .card-trabajo{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 3.125rem 0;
+    }
+
+    .seccion-trabajos{
+        height: auto;
+        width: 100%;
+    }
+
+    .container-cards-trabajos{
+        height: auto;
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,8 @@
+.swiper { /* medidas swiper por defecto*/
+    width: auto;
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+    color: var(--gds-font-color);
+}

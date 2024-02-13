@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leiva</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="./images/favicon-gold.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <main>
+        <section class="py-5">
+        <div class="container-xl h-100" data-bs-theme="light">
+            <div class="row h-100">
+                <div class="col-12 col-lg-8">
+                    <h1 class="color-blue leiva-title-medium leiva-fs-sm-30 py-2">FINALIZA LA COMPRA</h1>
+                    <p class="color-blue leiva-fs-4">Solicitamos únicamente la información esencial para la finalización de la compra.</p>
+                    <hr class="d-none d-lg-block">
+                </div>
+                <div class="col-12 col-lg-8 order-2 order-lg-1">
+                    
+                    <!-- Linea de pasos -->
+                    <div class="col-12 d-none d-lg-block">
+                        <div class="d-flex justify-content-between align-items-center p-4">
+                            
+                            <div class="d-flex justify-content-center align-items-center flex-column position-relative">
+                                <div class="paso-item paso-item--active m-2"><h6>1</h6></div>
+                                <p class="color-blue leiva-fs-2">IDENTIFICACIÓN</p>
+                            </div>
+
+                          <div class="w-100">
+                            <div class="line-pasos"></div>
+                          </div>
+
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <div class="paso-item m-2"><h6>2</h6></div>
+                                <p class="color-blue leiva-fs-2">ENVÍO</p>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="line-pasos"></div>
+                            </div>
+                          
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <div class="paso-item m-2"><h6>3</h6></div>
+                                <p class="color-blue leiva-fs-2">PAGO</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <form action="" id="form-pasarela">
+
+                        <div class="accordion accordion-flush py-5" id="accordionFlushExample">
+
+
+                            <!-- datos personales -->
+                            <div class="accordion-item color-fondo-white">
+                            <h2 class="accordion-header color-blue">
+                                <button id="acordeon-datos" class="pasarela-accordion-button accordion-button collapsed color-fondo-white leiva-title-small fw-1 color-blue px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <h6 class="leiva-title-small fw-1 color-blue leiva-fs-sm-20 pasarela-title-acordeon">1- DATOS PERSONALES</h6> 
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body p-1 px-md-4 py-md-2">
+
+                                    <div class="d-flex">
+                                        <div class="row">
+                                            <div class="col-12 py-4">
+                                                <input type="text" placeholder="Email*"   class="w-100">
+                                            </div>
+                                            <div class="col-12 py-4">
+                                                <input type="text" placeholder="Confirmacion de Email"   class="w-100">
+                                            </div>
+        
+                                            <div class="col-12 col-sm-6 py-4">
+                                                <input type="text" placeholder="Nombre y apellido"   class="w-100">
+                                            </div>
+        
+                                            <div class="col-12 col-sm-6 py-4">
+                                                <input type="text" placeholder="DNI"   class="w-100">
+                                            </div>
+
+                                            <div class="col-12 col-sm-6 py-4">
+                                                <input type="text" placeholder="CUIT"   class="w-100">
+                                            </div>
+
+                                            <div class="col-12 col-sm-6 py-4">
+                                                <input type="text" placeholder="Teléfono"   class="w-100">
+                                            </div>
+
+                                            <div class="col-12 py-4">
+                                                <button class="leiva-btn leiva-btn-full w-auto" id="next-datos">Continuar</button>
+                                            </div>
+
+                                        </div>
+
+                                        
+                                        
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            </div>
+
+                            
+                            <!-- envio -->
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button id="acordeon-envio" class="pasarela-accordion-button accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <h6 class="leiva-title-small fw-1 color-blue leiva-fs-sm-20 pasarela-title-acordeon">2- ENVÍO</h6> 
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body  p-1 px-md-4 py-md-2">
+
+                                    <div class="d-flex flex-column">
+
+
+
+                                        <div class="row">
+                                            <div class="col-12 py-4">
+                                                <input type="text" placeholder="Codigo postal"   class="w-100" value="">
+                                                <a href="" class="color-blue hide-underline mx-0">No sé mi código postal</a>
+                                            </div>
+
+
+                                            <div class="col-12 back-color-gray p-2">
+                                                <div class="col-12 d-flex justify-content-end p-0">
+                                                    <button type="button" class="btn-close align-self-end btn-delete-producto"></button>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center px-4">
+                                                    <p class="color-blue leiva-fs-5">Santa Teresita - Buenos Aires</p>
+
+                                                    <button class="leiva-btn leiva-btn-full l-border-b w-auto back-none color-blue p-1">Cambiar</button>
+                                                
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="col-12 col-sm-4 py-4">
+                                                <input type="text" placeholder="Dirección"   class="w-100 py-2" value="">
+                                            </div>
+        
+                                            <div class="col-12 col-sm-4 py-4">
+                                                <input type="text" placeholder="Número"   class="w-100 py-2" value="">
+                                            </div>
+        
+                                            <div class="col-12 col-sm-4 py-4">
+                                                <input type="text" placeholder="Apartamento"   class="w-100 py-2" value="">
+                                            </div>
+
+                                            <div class="col-12 py-4">
+                                                <input type="text" placeholder="Mensaje adicional"   class="w-100 py-2" value="">
+                                            </div>
+
+
+                                             <!-- Editar direciion -->
+                                            <div class="col-12 d-none">
+                                                <button class="leiva-btn leiva-btn-full w-auto px-5">Guardar dirección</button>
+                                            </div>
+
+                                            
+
+                                        </div>
+
+                                       
+                                        
+
+                                        <!-- direccion cargada -->
+                                        <div class="row w-100 back-color-gray px-4 py-4 d-none">
+                                            
+                                            <div class="col-7 mb-5">
+                                                <p class="color-blue">71170</p>
+                                                <p class="color-blue">La Rioja y Andrade 2B.</p>
+                                                <p class="color-blue">San bernardo - Partido de la Costa.</p>
+                                                <p class="color-blue">Edificio de la esquina</p>
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-end py-4 align-self-start justify-self-end">
+                                                <button class="leiva-btn leiva-btn-secundary w-auto l-border-none l-border-b fw-4 p-1">Editar o elegir otro</button>
+                                            </div>
+                                            <div class="col-1 d-flex justify-content-end p-0 align-self-start">
+                                                <button type="button" class="btn-close align-self-end btn-delete-producto"></button>
+                                            </div>
+                                            
+                                        </div>
+
+
+                                        <!--Editar o Elegir otro-->
+                                        <div class="container p-0 d-none">
+
+                                            <p class="color-gray leiva-fs-2 mb-5">Mis Direcciones</p>
+
+                                            <div class="row w-100 back-color-gray px-2 py-2  my-2  mx-0">
+                                                <div class="col-1 d-flex justify-content-center align-items-start py-4">
+                                                    <img src="./images/check.png" alt="">
+                                                </div>
+                                                <div class="col-6 mb-5">
+                                                    <p class="color-blue">71170</p>
+                                                    <p class="color-blue">La Rioja y Andrade 2B.</p>
+                                                    <p class="color-blue">San bernardo - Partido de la Costa.</p>
+                                                    <p class="color-blue">Edificio de la esquina</p>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-end py-4 align-self-start justify-self-end">
+                                                    <button class="leiva-btn leiva-btn-secundary w-auto l-border-none l-border-b fw-4 p-1">Editar</button>
+                                                </div>
+                                                <div class="col-1 d-flex justify-content-end p-0 align-self-start">
+                                                    <button type="button" class="btn-close align-self-end btn-delete-producto"></button>
+                                                </div>
+                                                
+                                            </div>
+
+
+                                            <div class="row w-100 back-color-gray px-2 py-2 my-2 mx-0">
+                                                <div class="col-1 d-flex justify-content-center align-items-start py-4">
+                                                    <img src="./images/check.png" alt="">
+                                                </div>
+                                                <div class="col-6 mb-5">
+                                                    <p class="color-blue">71170</p>
+                                                    <p class="color-blue">La Rioja y Andrade 2B.</p>
+                                                    <p class="color-blue">San bernardo - Partido de la Costa.</p>
+                                                    <p class="color-blue">Edificio de la esquina</p>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-end py-4 align-self-start justify-self-end">
+                                                    <button class="leiva-btn leiva-btn-secundary w-auto l-border-none l-border-b fw-4 p-1">Editar</button>
+                                                </div>
+                                                <div class="col-1 d-flex justify-content-end p-0 align-self-start">
+                                                    <button type="button" class="btn-close align-self-end btn-delete-producto"></button>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <button class="leiva-btn leiva-btn-secundary w-auto px-5 mx-0">Agregar dirección</button>
+                                        </div>
+
+
+
+
+                                        
+
+                                        <!-- metodo de entrega-->
+                                        <div class="row">
+
+                                            <div class="col-12 pt-5 pb-2">
+                                                <div class="col-12">
+                                                    <h3 class="color-blue leiva-fs-6">MÉTODOS DE ENTREGA</h3>
+                                                </div>
+        
+                                                <label class="col-12 d-flex leiva-btn leiva-btn-secundary px-2 p-md-4" >
+                                                    <div class="col-1">
+                                                        
+                                                        <input class="" type="checkbox" id="check">
+                                                        <div class="checkbox d-flex justify-content-center align-items-center"><div></div></div>
+                                                    </div>
+                                                    <div class="col-9 text-start px-2">
+                                                        <p class="color-blue leiva-fs-4 fw-5">Envío a domicilio Estándar - </p>
+                                                        <p class="color-blue leiva-fs-2">Llega en 3 días hábiles
+                                                            Los días hábiles se contabilizan desde que se le entrega el pedido a la logística</p>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <p class="color-blue ">$1200</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div class="col-12 py-4">
+                                                <button class="leiva-btn leiva-btn-full w-auto" id="next-envio">Continuar</button>
+                                            </div>
+
+                                            
+                                        </div>
+
+                                        
+                                        
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            </div>
+
+
+                            <!-- pago -->
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button id="acordeon-pagos" class="pasarela-accordion-button accordion-button collapsed leiva-title-small fw-1 color-blue px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    
+                                    <h6 class="leiva-title-small fw-1 color-blue leiva-fs-sm-20 pasarela-title-acordeon">3- MEDIOS DE PAGO</h6> 
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body  p-1 px-md-4 py-md-2">
+
+                                    <div class="container">
+                                        <div class="row">
+                                            
+                                            <div class="col-12 leiva-btn leiva-btn-secundary leiva-btn-active-none p-0" id="cardTarjeta">
+                                                <p class="leiva-fs-4 color-blue text-start p-4 d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTarjeta" aria-expanded="false" aria-controls="collapseTarjeta" id="btnCardTarjeta"><img src="./images/flecha-i2.png" alt="" class="back-pagos px-1"> Tarjeta de Crédito/ Debito</p>
+                                                <div class="collapse" id="collapseTarjeta">
+                                                    <div class="container p-4">
+                                                        <div class="row">
+                                                            <div class="col-12 py-4">
+                                                                <input type="text" class="w-100" placeholder="Numero de Tarjeta">
+                                                            </div>
+                                                            <div class="col-12 col-sm-4 py-4">
+                                                                <input type="text" class="w-100" placeholder="Titular de la tarjeta">
+                                                            </div>
+                                                            <div class="col-8 col-sm-4 py-4">
+                                                                <input type="month" class="w-100" placeholder="Vencimiento (MM/AA)">
+                                                            </div>
+                                                            <div class="col-4 py-4">
+                                                                <input type="text" class="w-100" placeholder="Cvv">
+                                                            </div>
+                                                            <div class="col-3 col-sm-6 py-4">
+                                                                <input type="text" class="w-100" placeholder="DNI">
+                                                            </div>
+                                                            <div class="col-9 col-sm-6 py-4">
+                                                                <input type="text" class="w-100" placeholder="Documento del titular">
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 leiva-btn leiva-btn-secundary p-0" id="cardTransferencia">
+                                                <p class="leiva-fs-4 color-blue text-start p-4 d-flex align-items-center"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTransferencia" aria-expanded="false" aria-controls="collapseTransferencia" id="btnCardTransferencia" ><img src="./images/flecha-i2.png" alt="" class="back-pagos px-1"> Transferencia Bancaria</p>
+                                                <div class="collapse" id="collapseTransferencia">
+                                                    <div class="container p-4">
+                                                        <div class="row">
+                                                            <div class="col-12 py-4 d-flex align-items-start flex-column">
+                                                                <label class="color-blue" for="cbu">CBU:</label>
+                                                                <div class="d-flex justify-content-between l-border-b pb-2 w-100">
+                                                                    <input type="text" class="w-100 l-border-none" placeholder="" id="cbu">
+                                                                    <img src="./images/copy.png" alt="">
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="col-12 py-4 d-flex align-items-start flex-column">
+                                                                <label class="color-blue" for="cbu">Nombre:</label>
+                                                                <div class="d-flex justify-content-between l-border-b pb-2 w-100">
+                                                                    <input type="text" class="w-100 l-border-none" placeholder="" id="cbu">
+                                                                </div>
+                                                                
+                                                            </div>
+
+
+                                                            <p class="color-blue">**Plazo máximo para transferir 30 Minutos</p>
+                                                            
+                                                            
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            
+                                            <div class="col-12 py-0 btnPagar p-0" >
+                                                <button class="leiva-btn leiva-btn-full w-auto px-5" id="pagar">Pagar</button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    
+
+                                </div>
+                            </div>
+                            </div>
+
+                            
+                        </div>
+
+                    </form>
+                </div>
+
+
+
+
+
+            
+            
+                <!-- resumen de compra -->
+                <div class="col-12 col-lg-4 align-self-center order-1 order-lg-2 py-5 py-lg-0">
+                    <h2 class="color-blue leiva-title-small text-center leiva-fs-sm-20">RESUMEN DE COMPRA</h2>
+                    <hr>
+
+                    <div class="container productoCarrito py-1">
+                        <div class="row align-items-center text-center">
+            
+                            
+                                <div class="col-5 col-md-6 d-flex justify-content-center align-items-center px-0">
+                                    
+                                    <img class="img-fluid w-50 px-2 img-producto-carrito d-none d-md-inline" src="./images/productos/producto-l.png" alt="">
+            
+                                    <div class="d-flex justify-content-center align-items-start flex-column">
+            
+                                        <p class="color-blue leiva-fs-1 text-start">Rolex Sea -Dweller Deepsea</p>
+            
+                                    </div>
+                                    
+                                </div>
+            
+                            
+            
+                                <div class="col-2 justify-content-center align-items-center">
+                                
+                                    <p class="color-blue p-2 back-color-gray leiva-fs-2">1</p>
+            
+                              </div>
+                                <div class="col-5 col-md-4">
+                                    <p class="color-blue leiva-fs-2 fw-5">$25.564,14</p>
+                                </div>
+                            
+                        </div>
+                    </div>
+
+                   
+                    
+                        <div class="col-12 d-flex justify-content-center flex-column">
+                            <hr>
+                            <div class="d-flex py-3">
+                                <div class="col-6">
+                                   <h6 class="color-blue leiva-fs-3 text-start">SUBTOTAL</h6>
+                                </div>
+                                <div class="col-6">
+                                    <p class="color-blue leiva-fs-3 text-end fw-5">$25.564,14</p>
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex py-3">
+                                <div class="col-6">
+                                   <h6 class="color-blue leiva-fs-3 text-start">COSTO DE ENVÍO</h6>
+                                </div>
+                                <div class="col-6">
+                                    <p class="color-blue leiva-fs-3 text-end fw-5">$0</p>
+                                </div>
+                            </div>
+                            
+    
+                            <div class="d-flex py-3">
+                                <div class="col-6">
+                                    <h6 class="color-blue leiva-title-small text-start fw-5 leiva-fs-sm-20">TOTAL</h6>
+                                 </div>
+                                 <div class="col-6">
+                                     <p class="color-blue leiva-fs-4 text-end fw-5">$25.564,14</p>
+                                 </div>
+                            </div>
+    
+                        </div>
+    
+                  
+
+                </div>
+
+
+            </div>
+        </div>
+
+       
+    </section>
+    </main>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script src="./js/bootstap-js/bootstrap.min.js"></script>
+<script src="./js/carrito/delete-product.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="./js/pasarela/switch.js"></script>
+
+</body>
+</html>

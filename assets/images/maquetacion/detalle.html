@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leiva</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="./images/favicon-gold.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <main>
+
+        <section class="py-5">
+            <div class="container-xl">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-lg-7">
+                        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-evenly">
+                            <div class="d-flex flex-row flex-lg-column justify-content-between order-2 order-lg-1 py-5 py-lg-2">
+                                <div class="p-2 my-2 shadow-sm"><img class="img-secundaria img-fluid" src="./images/galeria/1.jpg" alt=""></div>
+                                <div class="p-2 my-2 shadow-sm"><img class="img-secundaria img-fluid" src="./images/galeria/2.jpg" alt=""></div>
+                                <div class="p-2 my-2 shadow-sm"><img class="img-secundaria img-fluid" src="./images/galeria/3.jpg" alt=""></div>
+                            </div>
+                            <div class="shadow order-1 order-lg-2">
+                                <img class="img-fluid" id="img-primaria" src="./images/galeria/3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12  col-lg-5">
+                        <h2 class="color-blue py-4 leiva-title-medium">ROLEX SEA - DWELLER DEEPSEA</h2>
+                        <h4 class="color-blue py-2 leiva-title-max-small">$5.292.000</h4>
+                        <p class="color-blue py-4 leiva-fs-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </p>
+                        <button class="leiva-btn leiva-btn-full leiva-fs-4">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--- ficha tecnica escritorio -->
+
+        <section class="color-fondo-gray h-auto py-5 d-none d-sm-block">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-start align-items-center">
+                        <h2 class="color-blue">FICHA TÉCNICA <img class="d-none d-sm-inline-block" src="./images/line.png" alt=""></h2>
+                        <p class="color-blue px-2 leiva-fs-6 d-none d-sm-inline-block">Caracteristicas</p>
+                        
+                    </div>
+
+                    <div class="col-12">
+                        <hr class="my-2 col-12">
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-lg-4 py-4 d-flex "><p class="color-blue fw-7">Modelo:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> Rolex Sea-Dweller Deepsea</p></div>
+                            <div class="col-12 col-sm-6 col-lg-4 py-4 d-flex "><p class="color-blue fw-7">Cristal:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> Zafiro</p></div>
+                            <div class="col-12 col-sm-6 col-lg-4 py-4 d-flex "><p class="color-blue fw-7">Material de la pulsera:</p> <p class="color-blue px-4"> Acero</p></div>
+                            <div class="col-12 col-sm-6 col-lg-4 py-4 d-flex "><p class="color-blue fw-7">Referencia:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> 116660</p></div>
+                            <div class="col-12 col-sm-6 col-lg-4 py-4 d-flex "><p class="color-blue fw-7">Movimiento:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> Automático</p></div>
+                            <div class="col-12 col-sm-6 col-lg-4 py-4 d-flex "><p class="color-blue fw-7">Esperas sin números:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> sin cifras</p></div>
+                            <div class="col-12 col-sm-6 col-lg-4 py-4 d-flex "><p class="color-blue fw-7">Serie:</p> <p class="color-blue px-4">  KE380019</p></div>
+                            <div class="col-12 col-sm-6 col-lg-4 py-4 d-flex "><p class="color-blue fw-7">Material de la caja:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> Acero</p></div>
+                            <div class="col-12 col-sm-6 col-lg-4 py-4 d-flex "><p class="color-blue fw-7">Cuadrante: </p> <p class="color-blue pe-0 ps-4 px-sm-4"> Azul con calendario</p></div>
+                            <div class="col-12 col-sm-6 col-lg-4 py-4 d-flex "><p class="color-blue fw-7">Diámetro: </p> <p class="color-blue pe-0 ps-4 px-sm-4">44 MM</p></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--- ficha tecnica y caracteristicas mobil -->
+        <section class="accordion accordion-flush py-5 px-2 d-block d-sm-none " id="accordionFlushExample">
+            <div class="container">
+                <div class="row">
+                    <div class="accordion-item color-fondo-white col-12 p-0">
+                        <h2 class="accordion-header color-blue">
+                            <hr class="m-0">
+                            <button id="acordeon-ficha" class="accordion-button collapsed color-fondo-white leiva-title-small fw-1 color-blue w-100 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                
+                                <h2 class="color-blue">FICHA TÉCNICA <img class="d-none d-sm-inline-block" src="./images/line.png" alt=""></h2>
+                                    
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body color-fondo-gray p-2 px-md-4 py-md-2">
+            
+                        
+                                <div class="container color-fondo-gray p-2">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-lg-4 py-3 px-1 d-flex "><p class="color-blue fw-7">Modelo:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> Rolex Sea-Dweller Deepsea</p></div>
+                                        <div class="col-12 col-sm-6 col-lg-4 py-3 px-1 d-flex "><p class="color-blue fw-7">Referencia:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> 116660</p></div>
+                                        <div class="col-12 col-sm-6 col-lg-4 py-3 px-1 d-flex "><p class="color-blue fw-7">Serie:</p> <p class="color-blue px-4">  KE380019</p></div>
+                                        <div class="col-12 col-sm-6 col-lg-4 py-3 px-1 d-flex "><p class="color-blue fw-7">Diámetro: </p> <p class="color-blue pe-0 ps-4 px-sm-4">44 MM</p></div>
+                                        <div class="col-12 col-sm-6 col-lg-4 py-3 px-1 d-flex "><p class="color-blue fw-7">Cristal:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> Zafiro</p></div>
+                                        <div class="col-12 col-sm-6 col-lg-4 py-3 px-1 d-flex "><p class="color-blue fw-7">Movimiento:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> Automático</p></div>
+                                        <div class="col-12 col-sm-6 col-lg-4 py-3 px-1 d-flex "><p class="color-blue fw-7">Material de la caja:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> Acero</p></div>
+                                        <div class="col-12 col-sm-6 col-lg-4 py-3 px-1 d-flex "><p class="color-blue fw-7">Material de la pulsera:</p> <p class="color-blue px-4"> Acero</p></div>   
+                                        <div class="col-12 col-sm-6 col-lg-4 py-3 px-1 d-flex "><p class="color-blue fw-7">Esperas sin números:</p> <p class="color-blue pe-0 ps-4 px-sm-4"> sin cifras</p></div>
+                                        <div class="col-12 col-sm-6 col-lg-4 py-3 px-1 d-flex "><p class="color-blue fw-7">Cuadrante: </p> <p class="color-blue pe-0 ps-4 px-sm-4"> Azul con calendario</p></div>
+                                         
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item color-fondo-white col-12 p-0">
+                        <h2 class="accordion-header color-blue">
+                            
+                            <button id="acordeon-caracteristicas" class="accordion-button collapsed color-fondo-white leiva-title-small fw-1 color-blue w-100 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                
+                                <h2 class="color-blue">Caracteristicas</h2>
+                                    
+                            </button>
+
+                        </h2>
+                        <hr class="m-0">
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-1 px-md-4 py-md-2">
+                            
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--- ------------------------------>
+
+
+
+       
+
+        <section class="h-auto py-5">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="color-blue py-2">Todos nuestros relojes se entregan con garantía de funcionamiento y servicio. </p>
+                        <p class="color-blue py-2">Contamos con garantía de un año de cuerda, y se entregan con certificado de autenticidad expedido por la joyería, así como también documentación de fábrica en caso de que la pieza cuente con el mismo.</p>
+                        <p class="color-blue py-2"> Nuestros relojes son usados, es por ello, que nuestro equipo de especialistas realiza pruebas y testeos  de los mismos para entregarlos en perfecto estado y condiciones, de esta forma garantizar tranquilidad de  nuestros clientes. Recomendamos que una vez interesado por alguno de nuestros relojes, te acerques a nuestro salón para verlo sin cargo</p>
+
+                    </div>
+                </div>
+            </div>
+           </section>
+
+    
+
+           <!-- productos -->
+        <section class="h-auto">
+            
+            
+            <div class="container-xl py-2 py-md-5">
+                <h2 class="color-blue py-2 leiva-title-medium">PRODUCTOS DESTACADOS</h2>
+                <p class="color-blue py-4">¿Sentis que este producto no va con tu estilo?  Te recomendamos los siguientes productos entonces</p>
+
+                <div class="row py-5 d-none d-md-flex justify-content-center">
+                    <div class="col-md-4 col-xl-3 d-flex justify-content-center">
+                        <div class="producto-card d-flex flex-column align-items-center p-4">
+                            <div>
+                                <img class="producto-card-img img-fluid" src="./images/productos/reloj1.png" alt="">
+                            </div>
+                            <div>
+                                <p class="leiva-fs-7 color-blue">Tag Heuer</p>
+                                <h6 class="leiva-fs-7 color-blue fw-3">$306.200</h6>
+                            </div>
+                            <a href="" class="leiva-btn leiva-btn-secundary leiva-fs-3">Ver producto</a>
+                            <a href="" class="leiva-btn leiva-btn-full leiva-fs-3">Añadir al carrito</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-4 col-xl-3 d-flex justify-content-center">
+                        <div class="producto-card d-flex flex-column align-items-center p-4">
+                            <div>
+                                <img class="producto-card-img img-fluid" src="./images/productos/reloj1.png" alt="">
+                            </div>
+                            <div>
+                                <p class="leiva-fs-7 color-blue">Tag Heuer</p>
+                                <h6 class="leiva-fs-7 color-blue fw-3">$306.200</h6>
+                            </div>
+                            <a href="" class="leiva-btn leiva-btn-secundary leiva-fs-3">Ver producto</a>
+                            <a href="" class="leiva-btn leiva-btn-full leiva-fs-3">Añadir al carrito</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-4 col-xl-3 d-flex justify-content-center">
+                        <div class="producto-card d-flex flex-column align-items-center p-4">
+                            <div>
+                                <img class="producto-card-img img-fluid" src="./images/productos/reloj1.png" alt="">
+                            </div>
+                            <div>
+                                <p class="leiva-fs-7 color-blue">Tag Heuer</p>
+                                <h6 class="leiva-fs-7 color-blue fw-3">$306.200</h6>
+                            </div>
+                            <a href="" class="leiva-btn leiva-btn-secundary leiva-fs-3">Ver producto</a>
+                            <a href="" class="leiva-btn leiva-btn-full leiva-fs-3">Añadir al carrito</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-4 col-xl-3 d-flex justify-content-center">
+                        <div class="producto-card d-flex flex-column align-items-center p-4">
+                            <div>
+                                <img class="producto-card-img img-fluid" src="./images/productos/reloj1.png" alt="">
+                            </div>
+                            <div>
+                                <p class="leiva-fs-7 color-blue">Tag Heuer</p>
+                                <h6 class="leiva-fs-7 color-blue fw-3">$306.200</h6>
+                            </div>
+                            <a href="" class="leiva-btn leiva-btn-secundary leiva-fs-3">Ver producto</a>
+                            <a href="" class="leiva-btn leiva-btn-full leiva-fs-3">Añadir al carrito</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="row d-flex d-md-none">
+                    <div class="col-6 col-xl-3 d-flex justify-content-center p-0">
+                        <div class="producto-card-cuadricula d-flex flex-column align-items-center justify-content-between p-2">
+                            <div>
+                                <img class="producto-card-img-cuadricula" src="./images/productos/reloj1.png" alt="" >
+                            </div>
+                            <div>
+                                <p class="leiva-fs-7 color-blue">Tag Heuer</p>
+                                <h6 class="leiva-fs-7 color-blue fw-3">$306.200</h6>
+                            </div>
+                            <div>
+                                <a href="" class="leiva-btn leiva-btn-secundary leiva-fs-1 px-2 py-1 my-1">Ver producto</a>
+                                <a href="" class="leiva-btn leiva-btn-full leiva-fs-1 px-2 py-1 my-1">Añadir al carrito</a>
+                            
+                            </div>
+                         </div>
+                        
+                    </div>
+                    <div class="col-6 col-xl-3 d-flex justify-content-center p-0">
+                        <div class="producto-card-cuadricula d-flex flex-column align-items-center justify-content-between p-2">
+                            <div>
+                                <img class="producto-card-img-cuadricula" src="./images/productos/reloj1.png" alt="" >
+                            </div>
+                            <div>
+                                <p class="leiva-fs-7 color-blue">Tag Heuer</p>
+                                <h6 class="leiva-fs-7 color-blue fw-3">$306.200</h6>
+                            </div>
+                            <div>
+                                <a href="" class="leiva-btn leiva-btn-secundary leiva-fs-1 px-2 py-1 my-1">Ver producto</a>
+                                <a href="" class="leiva-btn leiva-btn-full leiva-fs-1 px-2 py-1 my-1">Añadir al carrito</a>
+                            
+                            </div>
+                         </div>
+                        
+                    </div>
+
+
+                    <div class="col-6 col-xl-3 d-flex justify-content-center p-0">
+                        <div class="producto-card-cuadricula d-flex flex-column align-items-center justify-content-between p-2">
+                            <div>
+                                <img class="producto-card-img-cuadricula" src="./images/productos/reloj1.png" alt="" >
+                            </div>
+                            <div>
+                                <p class="leiva-fs-7 color-blue">Tag Heuer</p>
+                                <h6 class="leiva-fs-7 color-blue fw-3">$306.200</h6>
+                            </div>
+                            <div>
+                                <a href="" class="leiva-btn leiva-btn-secundary leiva-fs-1 px-2 py-1 my-1">Ver producto</a>
+                                <a href="" class="leiva-btn leiva-btn-full leiva-fs-1 px-2 py-1 my-1">Añadir al carrito</a>
+                            
+                            </div>
+                         </div>
+                        
+                    </div>
+                    <div class="col-6 col-xl-3 d-flex justify-content-center p-0">
+                        <div class="producto-card-cuadricula d-flex flex-column align-items-center justify-content-between p-2">
+                            <div>
+                                <img class="producto-card-img-cuadricula" src="./images/productos/reloj1.png" alt="" >
+                            </div>
+                            <div>
+                                <p class="leiva-fs-7 color-blue">Tag Heuer</p>
+                                <h6 class="leiva-fs-7 color-blue fw-3">$306.200</h6>
+                            </div>
+                            <div>
+                                <a href="" class="leiva-btn leiva-btn-secundary leiva-fs-1 px-2 py-1 my-1">Ver producto</a>
+                                <a href="" class="leiva-btn leiva-btn-full leiva-fs-1 px-2 py-1 my-1">Añadir al carrito</a>
+                            
+                            </div>
+                         </div>
+                        
+                    </div>
+
+
+                    
+                  
+                   
+                </div>
+            </div>
+
+        </section>
+        
+
+    </main>
+
+
+    
+
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script src="./js/bootstap-js/bootstrap.min.js"></script>
+<script src="./js/detalle-producto/galeria.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+</body>
+</html>

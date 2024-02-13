@@ -1,0 +1,83 @@
+.listas-credito{
+    /* background-color: aqua; */
+    padding-top: 4rem;
+    padding-left: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    min-height: 400px;
+}
+
+.listas-credito__h2{
+    /* background-color: bisque; */
+    font-size: .8em;
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.listas-credito__svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+}
+
+.listas-credito__ul{
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .625rem;
+    
+}   
+
+.listas-credito__ul__li{
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+.listas-credito__ul__li__icon{
+    /* background-color: brown; */
+}
+
+.listas-credito__ul__li__p{
+    /* background-color: blue; */
+}
+
+
+@media (width < 992px){
+    .listas-credito__svg{
+        margin: 3.125rem;
+        top: 0;
+        right: 0;
+        left: unset;
+
+    }
+}
+
+
+@media (width < 450px){
+
+    .listas-credito{
+
+        padding-top: 1rem;
+        padding-left: 1rem;
+
+    }
+    
+
+    .listas-credito__ul{
+
+        flex-basis: 100%;
+        margin: 20px 0;
+        
+    }   
+
+}

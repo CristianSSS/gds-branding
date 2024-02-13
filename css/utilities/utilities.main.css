@@ -1,0 +1,35 @@
+.padding-0{
+    padding: 0;
+}
+
+.margin-0{
+    margin: 0;
+}
+
+
+.width-auto{
+    width: auto;
+}
+
+
+.p-150{
+    padding: clamp(3.125rem, 10vw, 9.375rem);
+}
+
+.p-100{
+    padding: clamp(2.5rem, 10vw, 6.25rem);
+}
+
+
+.gds-white-space{
+    white-space: normal;
+}
+
+.gds-word-wrap{
+    word-wrap:break-word;
+}
+
+
+.gds-fs-big{
+    font-size: clamp(2em, 4vw, 6.25em);
+}

@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leiva</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="./images/favicon-gold.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+
+                        <div class="btn-nav-burguer align-self-center">
+                           <a class="hide-underline" data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar"><img src="./images/burguer.png" alt=""></a> 
+                        </div>
+            
+                        <div class="align-self-center align-self-lg-end l-border-b header-search-container align-items-center order-2 order-lg-1 d-none d-lg-flex">
+                            <img src="./images/search.png" alt="">
+                            <input class="header-input-search px-2 py-1" type="text" placeholder="Buscar...">
+                        </div>
+            
+                        <a href="" class="align-self-end align-self-center hide-underline order-1 order-lg-2"><img class="header-logo-leiva" src="./images/logo-leiva.png" alt=""></a>
+                    
+                        <div class="align-self-center align-self-lg-end d-flex justify-content-end align-items-center user-cart-container order-3">
+                            <img src="./images/search.png" alt="" class="d-lg-none px-2 m-0" width="38px" id="btn-search">
+                            <a class="hide-underline m-0" href="./perfil.html"><img src="./images/user.png" alt="" class="leiva-icons px-2" width="40px"></a>
+                            <a class="hide-underline m-0 position-relative" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><img id="icon-carrito" src="./images/carrito.png" alt="" class="leiva-icons px-2" width="40px"><img class="position-absolute top-0 end-0" src="./images/circle.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-none d-lg-none w-100 m-auto" id="buscador-mobile">
+                    <div class="w-100 d-flex align-items-center justify-content-between l-border-b">
+                        <input id="input-search-mobile" type="text" class="w-75 header-input-search l-border-none px-4" placeholder="Buscar...">
+                        <img src="./images/search.png" alt="" class="py-2">
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <nav class="fixed-top position-lg-relative  header-nav">
+                        <ul class="d-flex justify-content-start justify-content-lg-center flex-column flex-lg-row header-nav-ul w-100 ">
+                            <li class="px-3"><a class="nav-link">Alianzas</a></li>
+                            <li class="px-3"><a class="nav-link">Anillos</a></li>
+                            <li class="px-3"><a class="nav-link">Cadenas</a></li>
+                            <li class="px-3"><a class="nav-link">Lingotes</a></li>
+                            <li class="px-3"><a class="nav-link">Monedas</a></li>
+                            <li class="px-3"><a class="nav-link">Relojes</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <!-- Navegacion desplegable -------------------------------------->
+
+      <div class="color-fondo-blue offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+        <div class="offcanvas-header d-flex justify-content-start leiva-shadown-b">
+            <div class="col-2">
+                <button type="button" class="leiva-btn leiva-btn-secundary l-border-none p-0 col-2" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./images/burguer.png" alt=""></button>
+        
+            </div>
+           <div class="col-8 d-flex justify-content-center">
+                <img class="w-25"  src="./images/logo-leiva.png" alt="">
+            </div>
+        </div>
+
+        <div class="offcanvas-body">
+        
+            <div class="">
+                <nav class="">
+                    <div class="accordion accordion-flush py-2" id="accordion-desplegable-nav">
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header color-blue">
+                                <button id="" class="accordion-button collapsed color-fondo-white leiva-title-small fw-1 accordion-button-header-nav" type="button" data-bs-toggle="collapse" data-bs-target="#acordeon-alianzas" aria-expanded="false" aria-controls="acordeon-alianzas">
+                        
+                                    <p class="leiva-fs-20 fw-1 fw-5">Alianzas</p> 
+                                </button>
+                            </h2>
+                            <div id="acordeon-alianzas" class="accordion-collapse collapse " data-bs-parent="#accordion-desplegable-nav">
+                                <div class="accordion-body p-1 px-md-4 py-md-2 accordion-button-header-nav">
+
+                                    <ul>
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS ITALINAS</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA ITALINA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA CAÑA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS HILO</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS CINTA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">ESPECIALES</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header color-blue">
+                                <button id="" class="accordion-button collapsed color-fondo-white leiva-title-small fw-1 accordion-button-header-nav" type="button" data-bs-toggle="collapse" data-bs-target="#acordeon-anillos" aria-expanded="false" aria-controls="acordeon-anillos">
+                        
+                                    <p class="leiva-fs-20 fw-5">Anillos</p> 
+                                </button>
+                            </h2>
+                            <div id="acordeon-anillos" class="accordion-collapse collapse " data-bs-parent="#accordion-desplegable-nav">
+                                <div class="accordion-body p-1 px-md-4 py-md-2 accordion-button-header-nav">
+
+                                    <ul>
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS ITALINAS</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA ITALINA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA CAÑA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS HILO</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS CINTA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">ESPECIALES</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header color-blue">
+                                <button id="" class="accordion-button collapsed color-fondo-white leiva-title-small fw-1 accordion-button-header-nav" type="button" data-bs-toggle="collapse" data-bs-target="#acordeon-cadenas" aria-expanded="false" aria-controls="acordeon-cadenas">
+                        
+                                    <p class="leiva-fs-20 fw-5">Cadenas</p> 
+                                </button>
+                            </h2>
+                            <div id="acordeon-cadenas" class="accordion-collapse collapse " data-bs-parent="#accordion-desplegable-nav">
+                                <div class="accordion-body p-1 px-md-4 py-md-2 accordion-button-header-nav">
+
+                                    <ul>
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS ITALINAS</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA ITALINA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA CAÑA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS HILO</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS CINTA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">ESPECIALES</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header color-blue">
+                                <button id="" class="accordion-button collapsed color-fondo-white leiva-title-small fw-1 accordion-button-header-nav" type="button" data-bs-toggle="collapse" data-bs-target="#acordeon-lingotes" aria-expanded="false" aria-controls="acordeon-lingotes">
+                        
+                                    <p class="leiva-fs-20 fw-5">Lingotes</p> 
+                                </button>
+                            </h2>
+                            <div id="acordeon-lingotes" class="accordion-collapse collapse " data-bs-parent="#accordion-desplegable-nav">
+                                <div class="accordion-body p-1 px-md-4 py-md-2 accordion-button-header-nav">
+
+                                    <ul>
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS ITALINAS</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA ITALINA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA CAÑA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS HILO</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS CINTA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">ESPECIALES</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header color-blue">
+                                <button id="" class="accordion-button collapsed color-fondo-white leiva-title-small fw-1 accordion-button-header-nav" type="button" data-bs-toggle="collapse" data-bs-target="#acordeon-monedas" aria-expanded="false" aria-controls="acordeon-monedas">
+                        
+                                    <p class="leiva-fs-20 fw-5">Monedas</p> 
+                                </button>
+                            </h2>
+                            <div id="acordeon-monedas" class="accordion-collapse collapse " data-bs-parent="#accordion-desplegable-nav">
+                                <div class="accordion-body p-1 px-md-4 py-md-2 accordion-button-header-nav">
+
+                                    <ul>
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS ITALINAS</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA ITALINA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA CAÑA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS HILO</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS CINTA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">ESPECIALES</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header color-blue">
+                                <button id="" class="accordion-button collapsed color-fondo-white leiva-title-small fw-1 accordion-button-header-nav" type="button" data-bs-toggle="collapse" data-bs-target="#acordeon-relojes" aria-expanded="false" aria-controls="acordeon-relojes">
+                        
+                                    <p class="leiva-fs-20 fw-5">Relojes</p> 
+                                </button>
+                            </h2>
+                            <div id="acordeon-relojes" class="accordion-collapse collapse " data-bs-parent="#accordion-desplegable-nav">
+                                <div class="accordion-body p-1 px-md-4 py-md-2 accordion-button-header-nav">
+
+                                    <ul>
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS ITALINAS</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA ITALINA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS MEDIA CAÑA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS HILO</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">CLASICAS CINTA</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="py-2 px-3">
+                                                <p class="leiva-fs-6">ESPECIALES</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                                <p class="py-2 px-4">Oro amarillo- oro rojo</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        
+        </div>
+
+    </div>
+
+
+
+    <!-- dropdowns navegacion ----------------------------------------->
+    <div class="position-relative w-100 d-none d-lg-block bottom-1 " id="accordion-dropdown" >
+            
+        
+
+        <div class="back-color-darkblue l-border-none position-absolute top-0 start-0 w-100 d-none" id="collapseAlianzas" data-bs-parent="#accordion-dropdown">
+
+            <div class="container-xl py-2 ">
+                <div class="row">
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS ITALINAS</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS MEDIA CAÑA</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS CINTA</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">ESPECIALES</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS MEDIA ITALINAS</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS HILO</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-color-darkblue l-border-none collapse position-absolute top-0 start-0 w-100" id="collapseAnillos" data-bs-parent="#accordion-dropdown">
+
+            <div class="container-xl py-2">
+                <div class="row">
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS ITALINAS</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS MEDIA CAÑA</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="back-color-darkblue l-border-none collapse position-absolute top-0 start-0 w-100" id="collapseCadenas" data-bs-parent="#accordion-dropdown">
+
+            <div class="container-xl py-2">
+                <div class="row">
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS ITALINAS</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS MEDIA CAÑA</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="back-color-darkblue l-border-none collapse position-absolute top-0 start-0 w-100" id="collapseLingotes" data-bs-parent="#accordion-dropdown">
+
+            <div class="container-xl py-2">
+                <div class="row">
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS ITALINAS</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS MEDIA CAÑA</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="back-color-darkblue l-border-none collapse position-absolute top-0 start-0 w-100" id="collapseMonedas" data-bs-parent="#accordion-dropdown">
+
+            <div class="container-xl py-2">
+                <div class="row">
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS ITALINAS</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS MEDIA CAÑA</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="back-color-darkblue l-border-none collapse position-absolute top-0 start-0 w-100" id="collapseRelojes" data-bs-parent="#accordion-dropdown">
+
+            <div class="container-xl py-2">
+                <div class="row">
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS ITALINAS</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                    <div class="col-3 p-2">
+                        <h6 class="leiva-fs-6">CLASICAS MEDIA CAÑA</h6>
+                        <p class="py-2">Oro amarillo- oro rojo</p>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- HERO ----------------------------------------------------------- -->
+
+    <div class="hero-bg-container pb-4 py-md-5 d-flex align-items-center" style="overflow: hidden;">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-11 col-md-6 col-lg-8 pe-5">
+                    <div class="pt-5 hero-titulo-container" style="overflow: hidden;">
+                        <h1 class="leiva-title-big title-hero-home">DESCUBRE NUESTRAS PIEZAS ÚNICAS</h1>
+                        <p class="pe-0 pe-md-5 leiva-fs-6 py-4">
+                            Descubre la elegancia y sofisticación de Leiva Joyas, donde encontrarás joyas y lingotes de oro únicos y exclusivos
+                        </p>
+                        <a class="leiva-btn leiva-btn-primary leiva-fs-6 w-auto px-1 px-sm-3 ms-1">Encuentra tu pieza perfecta</a>
+                    </div>
+    
+                </div>
+                <div class="col-1 col-md-6 col-lg-4 d-flex justify-content-center align-items-end">
+                    <img src="./images/secciones/lingote-home.png" alt="" class="hero-img align-self-center img-fluid ps-2">
+                </div>
+                <a class="leiva-btn leiva-btn-primary leiva-fs-6 d-none px-1 px-sm-3">Encuentra tu pieza perfecta</a>
+                    
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- POP UP CARRITO DE COMPRAS ---------------------------------------------------------------->
+
+    <div class="color-fondo-white offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header d-flex justify-content-end">
+          
+          <button type="button" class="btn-close align-self-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body h-100 p-2">
+            <div class="container">
+                <div class="row d-flex justify-content-between flex-column">
+                    <div class="col-12">
+                        <h5 class="color-blue text-center">CARRITO DE COMPRAS</h5>
+                        <hr>
+                    </div>
+                    <div class="col-12 p-0">
+                        
+                        <div class="container productoCarrito">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="button" class="btn-close align-self-end btn-delete-producto"></button>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                    <div class="col-3"><img class="w-75" src="./images/secciones/reloj-detalle-1.png" alt=""></div>
+                                    <div class="col-5">
+                                        <p class="color-blue leiva-fs-1">
+                                            Rolex Sea -
+                                            Dweller Deepsea
+                                        </p>
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <button class="p-1 pb-2 m-0 l-border-none"><img src="./images/-.png" alt=""></button>
+                                            <button class="p-1 pb-2 m-0 l-border-none color-blue fw-6">1</button>
+                                            <button class="p-1 pb-2 m-0 l-border-none"><img src="./images/+.png" alt=""></button>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="color-blue leiva-fs-2 fw-5">$25.564,14</p>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container productoCarrito">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="button" class="btn-close align-self-end btn-delete-producto"></button>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                    <div class="col-3"><img class="w-75" src="./images/secciones/reloj-detalle-1.png" alt=""></div>
+                                    <div class="col-5">
+                                        <p class="color-blue leiva-fs-1">
+                                            Rolex Sea -
+                                            Dweller Deepsea
+                                        </p>
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <button class="p-1 pb-2 m-0 l-border-none"><img src="./images/-.png" alt=""></button>
+                                            <button class="p-1 pb-2 m-0 l-border-none color-blue fw-6">1</button>
+                                            <button class="p-1 pb-2 m-0 l-border-none"><img src="./images/+.png" alt=""></button>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="color-blue leiva-fs-2 fw-5">$25.564,14</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <button class="leiva-btn l-border-none color-blue back-none fw-6 p-0 m-0">Vaciar carrito</button>
+                       <hr>
+                       <div class="d-flex justify-content-between py-2">
+                            <h6 class="color-blue">SUBTOTAL</h6>
+                            <p class="color-blue leiva-fs-2 fw-5">$25.564,14</p>
+                       </div>
+                       <div class="d-flex justify-content-between py-2">
+                            <h6 class="color-blue">ENVÍO</h6>
+                            <p class="color-blue leiva-fs-2">A calcular</p>
+                       </div>
+                       <div class="d-flex justify-content-between py-2">
+                            <h6 class="color-blue leiva-fs-6 fw-3">TOTAL</h6>
+                            <p class="color-blue leiva-fs-4 fw-5">$25.564,14</p>
+                       </div>
+                       <a href="" class="leiva-btn leiva-btn-full">Finalizar compra</a>
+                    </div>
+
+
+
+                    <!-- CARRITO VACIO ----------------------------------------------------------------------->
+
+                    <div class="col-12  d-flex justify-content-center h-100 flex-column align-items-center py-5 d-none">
+                        <img src="./images/vacio.png" alt="" class="img-fluid">
+                        <p class="color-blue leiva-fs-6 py-4">Su carrito esta vacío</p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+
+
+    <!-- home -->
+
+    <main>
+
+        <section class="color-fondo-gray py-5">
+            <div class="container-xl d-flex flex-column justify-content-center">
+                <div class="row text-center py-4 px-2 p-lg-5">
+                    <div class="col-12">
+                        <h2 class="color-blue p-1 leiva-title-medium">NUESTRA SELECCIÓN</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="p-2 color-blue">Descubre la elegancia y sofisticación de Leiva Joyas, donde encontrarás joyas y lingotes de oro únicos y exclusivos</p>
+                    </div>
+                </div>
+
+
+
+                <!-- SLIDER CATEGORIAS DESKTOP  -->
+
+                <div class="row d-none d-lg-flex">
+
+
+                    <div class="swiper swiper-categorias-primary">
+                        
+                        <div class="swiper-wrapper">
+                        
+
+                            <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="categoria-card">
+                                        <div class="categoria-card-shadow"></div>
+                                        <img class="categoria-card-img" src="./images/categorias/joyeria.jpg" alt="">
+                                    </div>
+                                    <p class="color-blue p-3 leiva-fs-6">Joyería</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="categoria-card">
+                                        <div class="categoria-card-shadow"></div>
+                                        <img class="categoria-card-img" src="./images/categorias/oro-fino.jpg" alt="">
+                                    </div>
+                                    <p class="color-blue p-3 leiva-fs-6">Oro fino</p>
+                                </div>
+                                
+                            </div>
+
+
+                            <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="categoria-card">
+                                        <div class="categoria-card-shadow"></div>
+                                        <img class="categoria-card-img" src="./images/categorias/relojes.jpg" alt="">
+                                    </div>
+                                    <p class="color-blue p-3 leiva-fs-6">Relojes</p>
+                                </div>
+                                
+                            </div>
+
+
+
+                            <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="categoria-card">
+                                        <div class="categoria-card-shadow"></div>
+                                        <img class="categoria-card-img" src="./images/categorias/alianza.jpg" alt="">
+                                    </div>
+                                    <p class="color-blue p-3 leiva-fs-6">Alianzas</p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        
+                    
+                       
+                    
+                       
+                    </div>
+
+            
+                </div>
+
+
+
+                  <!-- SLIDER CATEGORIAS MOBILE  -->
+
+                <div class="row d-block d-lg-none">
+                    
+
+                    <div class="col-12 d-flex py-4 px-0">
+                        <div class="swiper swiper-categorias">
+                          
+                            <div class="swiper-wrapper">
+                        
+
+                                <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="">
+                                            <img class="categoria-card-img rounded-circle" src="./images/categorias/Alianza_Categoría-01.svg" alt="">
+                                        </div>
+                                        <p class="color-blue p-3 leiva-fs-6">Alianzas</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="">
+                                            <img class="categoria-card-img rounded-circle" src="./images/categorias/Anillos_Categoría-01.svg" alt="">
+                                        </div>
+                                        <p class="color-blue p-3 leiva-fs-6">Anillos</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="">
+                                            <img class="categoria-card-img rounded-circle" src="./images/categorias/Aros_Categoría-01.svg" alt="">
+                                        </div>
+                                        <p class="color-blue p-3 leiva-fs-6">Aros</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="">
+                                            <img class="categoria-card-img rounded-circle" src="./images/categorias/Cadenas_Categoría-01.svg" alt="">
+                                        </div>
+                                        <p class="color-blue p-3 leiva-fs-6">Cadenas</p>
+                                    </div>
+                                    
+                                </div>
+
+
+                                <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="">
+                                            <img class="categoria-card-img rounded-circle" src="./images/categorias/Dijes_Categoría-01.svg" alt="">
+                                        </div>
+                                        <p class="color-blue p-3 leiva-fs-6">Dijes</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="">
+                                            <img class="categoria-card-img rounded-circle" src="./images/categorias/OroFino_Categoría-01.svg" alt="">
+                                        </div>
+                                        <p class="color-blue p-3 leiva-fs-6">Oro fino</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="">
+                                            <img class="categoria-card-img rounded-circle" src="./images/categorias/Pulsera_Categoría-01.svg" alt="">
+                                        </div>
+                                        <p class="color-blue p-3 leiva-fs-6">Pulseras</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="">
+                                            <img class="categoria-card-img rounded-circle" src="./images/categorias/Relojes_Categoría-01.svg" alt="">
+                                        </div>
+                                        <p class="color-blue p-3 leiva-fs-6">Relojes</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-6 col-xl-3 d-flex justify-content-center p-0 swiper-slide">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="">
+                                            <img class="categoria-card-img rounded-circle" src="./images/categorias/Monedas_Categoría-01.svg" alt="">
+                                        </div>
+                                        <p class="color-blue p-3 leiva-fs-6">Monedas</p>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                            
+                        
+                           
+                        
+                           
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container-xl d-flex align-items-center py-5 px-4 px-xl-0">
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-12 col-xl-6 order-lg-1 order-2 p-0 d-flex justify-content-center">
+                    <img src="./images/secciones/tasador_leiva.png" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-xl-6 px-2 px-md-5 d-flex flex-column justify-content-start align-items-start order-lg-2 order-1">
+                    <h2 class="leiva-title-medium color-blue py-4">DESCUBRE EL VALOR OCULTO</h2>
+                    <p class="leiva-fs-4 color-blue py-2">
+                        En Leiva Joyas no solo nos apasiona ofrecer piezas de alta calidad, también estamos comprometidos en ayudarte a descubrir el valor real de tus tesoros.
+                        <br>
+            
+                        Ofrecemos servicios de tasación y cotización para tus joyas, alhajas y relojes, para que puedas obtener una valoración justa y transparente de tus piezas valiosas.
+                        <br>
+            
+                        Si estás interesado en conocer más acerca de este servicio, no dudes en contactarnos.
+                    </p>
+            
+                    <a class="leiva-btn leiva-btn-full leiva-fs-6 w-auto my-4">Cotizar ahora <img src="./images/ring-btn.png" alt=""></a>
+                
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="color-fondo-gray">
+
+            <div class="container-xl d-flex align-items-center px-4 px-xl-0">
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-xl-6 d-flex flex-column justify-content-start align-items-start py-5">
+                        <h2 class="leiva-title-big color-blue py-2">ASEGURA TU INVERSIÓN</h2>
+                        <p class="leiva-fs-4 color-blue py-2">
+                            En Leiva Joyas no solo nos apasiona ofrecer piezas de alta calidad, también estamos comprometidos en ayudarte a descubrir el valor real de tus tesoros.
+                            <br>
+                
+                            Ofrecemos servicios de tasación y cotización para tus joyas, alhajas y relojes, para que puedas obtener una valoración justa y transparente de tus piezas valiosas.
+                            <br>
+                
+                            Si estás interesado en conocer más acerca de este servicio, no dudes en contactarnos.
+                        </p>
+                
+                        <a class="leiva-btn leiva-btn-full leiva-fs-6 w-auto my-4">Ver lingotes de oro</a>
+                    
+                    </div>
+    
+                    <div class="col-12 col-xl-6 d-flex justify-content-center">
+                        <img src="./images/secciones/lingotes.png" alt="" class="img-fluid float-end" >
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- hero footer -->
+
+    <div class="position-relative footer-hero-container py-5">
+
+        <img  src="./images/secciones/banner-anillo.png" alt="" class="position-absolute top-0 start-0 footer-hero-fondo" width="100%">
+    
+        <div class="container-xl py-5">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <h2 class="leiva-title-max-medium">TODOS NUESTROS PRODUCTOS A UN CLICK</h2>
+                    <a class="leiva-btn leiva-btn-primary w-auto leiva-fs-6">Ir a la tienda</a>
+                </div>
+            </div>
+        </div>
+    
+        
+
+    </div>
+
+    <footer>
+
+        <div class="d-flex flex-wrap justify-content-between p-2 p-md-5 footer-all-columns m-auto">
+            <div class="footer-column footer-column-1 p-1 py-2">
+                <a href="#" class="hide-underline"><img src="./images/logo-leiva.png" alt="" class="footer-logo-leiva p-2"></a>
+        
+                <p class="leiva-fs-1 p-2">En Leiva Joyas nos dedicamos a ofrecer piezas únicas y exclusivas de alta calidad, con un diseño elegante y sofisticado. 
+                    Nuestro compromiso es brindarte una experiencia de compra excepcional y un servicio al cliente de primera clase. ¡Gracias por elegirnos!</p>
+            </div>
+            <div class="footer-column py-4 py-md-1 d-none d-md-block">
+                <h3 class="leiva-title-small l-border-b">SERVICIOS</h3>
+                <ul>
+                    <li><a class="ms-0" href="">Cotizacion</a></li>
+                    <li><a class="ms-0" href="">Tienda online</a></li>
+                    <li><a class="ms-0" href="">Contacto directo</a></li>
+                    <li><a class="ms-0" href="">Preguntas frecuentes</a></li>
+                    <li><a class="ms-0" href="">Consejos de expretos</a></li>
+                </ul>
+            </div>
+            <div class="footer-column py-4 py-md-1 d-none d-md-block">
+                <h3 class="leiva-title-small l-border-b">SOPORTE</h3>
+                <ul>
+                    <li><a class="ms-0" href="">Guías de usuario</a></li>
+                    <li><a class="ms-0" href="">Necesito ayuda</a></li>
+                    <li><a class="ms-0" href="">Políticas de compra</a></li>
+                    <li><a class="ms-0" href="">Términos y condiciones</a></li>
+                    <li><a class="ms-0" href="">Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-column py-4 py-md-1  d-none d-md-block">
+                <h3 class="leiva-title-small l-border-b">CONÉCTATE</h3>
+                <ul>
+                    <li><img src="./images/redes/logo-instagram.png" alt=""><a href="">Instagram</a></li>
+                    <li><img src="./images/redes/logo-facebook.png" alt=""><a href="">Facebook</a></li>
+                    <li><img src="./images/redes/logo-linkedin.png" alt=""><a href="">Linkedin</a></li>
+                    <li><img src="./images/redes/logo-whatsapp.png" alt=""><a href="">WhatsApp</a></li>
+                    <li><img src="./images/redes/logo-youtube.png" alt=""><a href="">Youtube</a></li>
+                </ul>
+            </div>
+
+
+
+            <!-- Footer mobil -->
+
+            <div class="accordion accordion-flush leiva-accordion leiva-accordion-flush py-4 col-12 d-block d-md-none" id="accordionFlushExample">
+
+                <hr class="color-white">
+
+                <div class="accordion-item leiva-accordion-item">
+                <div class="accordion-header leiva-accordion-header color-blue">
+                    <button id="acordeon-datos" class="accordion-button leiva-accordion-button collapsed leiva-title-small fw-1 accordion-button-header-nav py-4 px-0" type="button" data-bs-toggle="collapse" data-bs-target="#servicios" aria-expanded="false" aria-controls="servicios">
+            
+                        <h6 class="leiva-fs-20 fw-1">SERVICIOS</h6> 
+                    </button>
+                </div>
+                <div id="servicios" class="accordion-collapse leiva-accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body leiva-accordion-body p-1 px-md-4 py-md-2 accordion-button-header-nav">
+
+                        <ul>
+                            <li><a class="ms-0" href="">Cotizacion</a></li>
+                            <li><a class="ms-0" href="">Tienda online</a></li>
+                            <li><a class="ms-0" href="">Contacto directo</a></li>
+                            <li><a class="ms-0" href="">Preguntas frecuentes</a></li>
+                            <li><a class="ms-0" href="">Consejos de expretos</a></li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+                </div>
+
+                <div class="accordion-item leiva-accordion-item">
+                    <div class="accordion-header leiva-accordion-header color-blue">
+                        <button id="acordeon-datos" class="accordion-button leiva-accordion-button collapsed leiva-title-small fw-1 accordion-button-header-nav py-4 px-0" type="button" data-bs-toggle="collapse" data-bs-target="#soporte" aria-expanded="false" aria-controls="soporte">
+                
+                            <h6 class="leiva-fs-20 fw-1">SOPORTE</h6> 
+                        </button>
+                    </div>
+                    <div id="soporte" class="accordion-collapse leiva-accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body leiva-accordion-body p-1 px-md-4 py-md-2 accordion-button-header-nav">
+        
+                            <ul>
+                                <li><a class="ms-0" href="">Guías de usuario</a></li>
+                                <li><a class="ms-0" href="">Necesito ayuda</a></li>
+                                <li><a class="ms-0" href="">Políticas de compra</a></li>
+                                <li><a class="ms-0" href="">Términos y condiciones</a></li>
+                                <li><a class="ms-0" href="">Nosotros</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    </div>
+            </div>
+
+
+
+            <div class="footer-column py-4 py-md-1 d-block d-md-none">
+                <ul class="d-flex justify-content-between">
+                    <li><a href=""><img src="./images/redes/logo-instagram.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/redes/logo-facebook.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/redes/logo-linkedin.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/redes/logo-whatsapp.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/redes/logo-youtube.png" alt=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="text-start text-md-center footer-copyright px-2">
+            <p class="opacity-50">
+                Leiva joyas | Diseñado, Creado y Optimizado por <a href="https://waveit.ar/" target="_blank" class="l-border-b hide-underline">WaveIT</a> | Copyright © 2023 - 2023
+            </p>
+        </div>
+        
+    </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script src="./js/bootstap-js/bootstrap.min.js"></script>
+<script src="./js/carrito/delete-product.js"></script>
+<script src="./js/header/search-btn.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="./js/header/dropdowns.js"></script>
+<script src="./js/home/swiper-categorias.js"  type="module"></script>
+</body>
+</html>

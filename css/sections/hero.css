@@ -1,0 +1,81 @@
+.hero{
+    height: 100vh;
+    width: 100vw;
+    padding: 50px;
+    min-height: 480px;
+}
+
+.hero--background-image{
+    background-image: url(../../assets/images/pollo-asado-hero.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-title{
+    font-size: clamp(50px, 12vw, 207px);
+    word-wrap: break-word;
+    white-space: pre-line;
+    font-weight: 400;
+    
+}
+
+.asterisco{
+    top: 150px;
+}
+
+@media (width < 1200px ){
+    .asterisco{
+        top: 100px;
+        scale: .6;
+    }
+}
+
+
+@media (width < 768px ){
+    .asterisco{
+        top: 50px;
+   
+    }
+    .hero{
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 0;
+        
+    }
+}
+
+@media (width <750px){
+    .asterisco{
+        top: 10px;
+
+    }
+    .hero{
+        min-height: 380px;
+    }
+}
+
+
+@media (width < 576px){
+    .asterisco{
+        top: -50px;
+        left: 80%;
+        scale: .6;
+    }
+}
+
+
+@media (width < 992px ){
+    .hero{
+        height: auto;
+        width: 100%;
+        
+    }
+
+    .hero--background-image{
+        height: 250px;
+        min-height: unset;
+    }
+    
+    
+}
+

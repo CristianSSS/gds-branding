@@ -1,0 +1,9 @@
+.list-title{
+    font-size: clamp(3.125rem, 6vw, 5rem);
+}
+
+@media(height < 679px){
+    .list{
+        line-height: 4.6875rem;
+    }
+}

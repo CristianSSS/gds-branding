@@ -1,0 +1,11 @@
+.nosotros-hero__info{
+    width: 100%;
+    max-width: 31.25rem;
+    min-width: 12.5rem;
+}
+
+.nosotros-hero__info__parrafo{
+    white-space: pre-wrap;
+    font-size: clamp(1rem, 1.5vw, 1.4rem);
+
+}

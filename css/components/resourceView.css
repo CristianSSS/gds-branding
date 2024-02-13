@@ -1,0 +1,39 @@
+.resource{
+    height: 100vh;
+    width: auto;
+    object-position:center;
+    margin: 0;
+    padding: 0;
+}
+
+.resource-img{
+    object-fit: cover;
+    display: inline-block;
+}
+
+.resource-video{
+    object-fit: contain;
+}
+
+.full-img{
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+
+@media (width <992px){
+    
+    .resource{
+        width: 100%;
+        height: auto;
+    }
+
+    .full-img{
+        height:auto;
+        width: 100%;
+    }
+    
+}

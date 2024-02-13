@@ -1,0 +1,19 @@
+@import url(./normalize.css);
+
+@import url(./libraries/bootstrap/bootstrap.min.css); /* Framwork de estilos Bootstrap*/
+
+@import url(./root.css);
+
+@import url(./base/base.main.css);
+
+@import url(./libraries/locomotive.css); /* Libreria de scroll */
+
+@import url("https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"); /* Libreria de slider / carousel */
+
+@import url(./overrides/overrides.main.css);
+
+@import url(./sections/sections.main.css);
+
+@import url(./components/components.main.css);
+
+@import url(./utilities/utilities.main.css);

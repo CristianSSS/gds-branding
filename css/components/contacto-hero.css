@@ -1,0 +1,28 @@
+.contacto-hero{
+    position: relative;
+    margin-top: clamp(1.25rem, 3vw, 3.125rem);
+    padding: clamp(0rem, 3vw, 9.375rem);
+}
+
+.contacto-hero__cruz{
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+
+.contacto-hero__info{
+    margin-top: 4vh;
+}
+
+.contacto-hero__info__title{
+
+}
+
+.contacto-hero__info__data{
+
+    margin: 0;
+    font-size: clamp(1.25em, 10vw, 1.875em);
+
+}
+
+

@@ -1,0 +1,42 @@
+.swiper-equipo{
+    width: 100%;
+    min-width: 100vw;
+    max-width: 150vw;
+}
+.card-equipo{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 2vw;
+}
+
+.card-equipo__img{
+  
+    width: 100%;
+}
+
+.card-equipo__nombre{
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.card-equipo__puesto{
+ 
+    width: 100%;
+}
+
+
+.equipo-redes{
+    padding: 20px 0;
+}
+
+@media (width < 922px){
+    .card-equipo{
+        margin: 0 auto;
+    }
+}

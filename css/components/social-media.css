@@ -1,0 +1,11 @@
+.social-media, .social-media-left, .social-media-top{
+    transition: .5s;
+}
+
+.social-media-top:hover{
+    transform:translateY(-0.9375rem);
+}
+
+.social-media-left:hover{
+    transform:translateX(-0.9375rem);
+}

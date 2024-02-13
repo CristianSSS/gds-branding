@@ -1,0 +1,9 @@
+.hero-title{
+    font-size: clamp(3.3em, 10vw, 9.4em);
+}
+
+.parrafo-principal-landing{
+    word-wrap: break-word;
+    white-space: pre-line;
+    font-size: clamp(1em, 2vw, 1.2em);
+}

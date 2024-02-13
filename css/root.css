@@ -1,0 +1,42 @@
+:root{
+    --gds-color-black: #151A1D;
+    --gds-color-begie: #FEECCB;
+    --gds-color-yellow:#FFBE26;
+    --gds-color-red: #FC3E19;
+
+    --gds-background: var(--gds-color-black);
+
+    --gds-font-color: var(--gds-color-begie);
+
+    --gds-font-family-title: 'Hanken Grotes', sans-serif;
+
+    --gds-font-family-parrafo: 'Roboto', sans-serif;
+
+    --gds-underline-a: var(--gds-color-yellow);
+}
+
+[gds-theme="light"]{
+    
+    --gds-background: var(--gds-color-begie);
+
+    --gds-font-color: var(--gds-color-black);
+
+    --gds-underline-a: var(--gds-color-yellow);
+
+    background-color: var(--gds-color-begie);
+
+}
+
+[gds-theme="dark"]{
+
+    --gds-background: var(--gds-color-black);
+
+    --gds-font-color: var(--gds-color-begie);
+
+    --gds-underline-a: var(--gds-color-yellow);
+
+    background-color: var(--gds-color-black);
+
+    
+}
+

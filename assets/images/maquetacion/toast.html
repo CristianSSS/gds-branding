@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leiva</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="./images/favicon-gold.svg" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    </head>
+
+<body>
+  
+
+  <!-- BOTON PARA PROBAR EL TOAST  -->
+  <button type="button" class="btn btn-primary" id="btn-run-toast">Show live toast</button>
+
+
+<!-- toast -->
+
+  <div class="toast-container position-fixed end-0 top-0 p-3 me-3 me-sm-5">
+    <div id="leiva-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    
+      <div class="d-flex leiva-toast align-items-center position-absolute shadow ">
+        <div class=" pb-0 pb-sm-1 py-1 ps-3  pe-1 align-self-end">
+          <img src="./images/iconos/ok.png" alt="" class="py-2 leiva-toast-status-img">
+        </div>
+          
+    
+        <div class="leiva-toast-content ms-1 py-2 w-100">
+    
+          <div class="toast-header d-flex justify-content-between back-color-white m-0 pb-0  ps-0">
+            <h3 class="leiva-fs-3 p-0 p-2 pb-1 ps-0 leiva-toast-title m-0 fw-4">PRODUCTO</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body m-0 pt-0 ps-0">
+            <p class="l-border-b d-inline pb-2 pe-4 pt-1 m-0 leiva-toast-msn">Mensaje de alerta de alguna información</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="./js/bootstap-js/bootstrap.min.js"></script>
+    <script src="./js/carrito/delete-product.js"></script>
+    <script src="./js/header/search-btn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./js/header/dropdowns.js"></script>
+    <script src="./js/home/swiper-categorias.js"  type="module"></script>
+
+
+
+    <!-- script del toast-->
+
+    <script>
+
+      const toastTrigger = document.getElementById('btn-run-toast')
+      const toastLiveExample = document.getElementById('leiva-toast')
+
+      if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastTrigger.addEventListener('click', () => {
+          toastBootstrap.show()
+        })
+      }
+
+    </script>
+
+
+</body>
+</html>

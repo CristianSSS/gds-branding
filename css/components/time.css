@@ -1,0 +1,36 @@
+.time{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    padding: clamp(1.25rem, 4vw, 6.25rem);
+}
+
+.time__hora{
+    font-size: clamp(4em, 6vw, 6em);
+    color: var(--gds-color-yellow);
+    font-weight: 700;
+    font-family: var(--gds-font-family-title);
+}
+
+.time__zona{
+    color: var(--gds-font-color);
+}
+
+
+@media (width < 992px){
+    .time{
+        height: auto;
+        margin-top: 100px;
+    }
+    
+    .time__hora{
+    
+    }
+    
+    .time__zona{
+    
+    }
+    
+}

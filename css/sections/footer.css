@@ -1,0 +1,27 @@
+.footer{
+    width: 100vw;
+    height: 100vh;
+}
+
+.footer-adress{
+    width: 100%;
+    max-width: 25rem;
+    min-width: 15.625rem;
+    margin-left: auto;
+}
+
+.footer__title-medios-contactos{
+    font-size: 1.5rem;
+}
+
+
+@media (width <= 992px){
+    .footer-adress{
+        margin: 0 auto;
+    }
+
+    .footer{
+        width: 100%;
+        height: auto;
+    }
+}
